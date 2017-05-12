@@ -48,6 +48,11 @@
                 "name": "introduction",
                 "title": "Introduction",
                 "file": "./pages/intro.md"
+            },
+            {
+                "name": "writing",
+                "title": "Writing Style",
+                "file": "./pages/writing.md"
             }
         ]
     },
