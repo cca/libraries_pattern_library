@@ -1,0 +1,88 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": "CCA Libraries",
+    "project_url": "http://libraries.cca.edu",
+    "copyright_start_year": 2017,
+    "client_name": "California College of the Arts",
+    "client_url": "http://cca.edu",
+    "creators": [
+        {
+            "name": "Eric Phetteplace",
+            "url": "http://phette.net"
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": false,
+        "max_width": null,
+        "titles": {
+            "library_title": "Design Patterns",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "styles.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "branding",
+            "title": "Branding",
+            "components": [
+                {
+                    "group": "branding",
+                    "name": "primary-colors",
+                    "title": "Primary Colors",
+                    "type": "colors",
+                    "colors": [
+                        "#000",
+                        "#CF4520",
+                        "#005776",
+                        "#FFF",
+                        "#888B8D"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "buttons",
+            "title": "Buttons",
+            "components": [
+                {
+                    "group": "buttons",
+                    "name": "primary-button",
+                    "title": "Primary Button",
+                    "width": "half"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.3"
+}
