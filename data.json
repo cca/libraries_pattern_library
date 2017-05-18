@@ -73,6 +73,14 @@
                         "#FFF",
                         "#888B8D"
                     ]
+                },
+                {
+                    "group": "branding",
+                    "name": "secondary-colors",
+                    "title": "Secondary Colors",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 }
             ]
         },
