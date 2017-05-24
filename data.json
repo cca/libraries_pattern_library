@@ -51,8 +51,13 @@
             },
             {
                 "name": "writing",
-                "title": "Writing Style",
+                "title": "Writing & Typography",
                 "file": "./pages/writing.md"
+            },
+            {
+                "name": "writing",
+                "title": "Images",
+                "file": "./pages/images.md"
             }
         ]
     },
