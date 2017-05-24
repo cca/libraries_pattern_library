@@ -33,6 +33,7 @@
         "css": [
             "styles/colors.css",
             "styles/styles.css",
+            "styles/footer.css",
             "styles/search.css"
         ],
         "js": [
@@ -101,6 +102,11 @@
                     "options": {
                         "disable_code_sample": true
                     }
+                },
+                {
+                    "group": "branding",
+                    "name": "footer",
+                    "title": "Footer"
                 }
             ]
         },

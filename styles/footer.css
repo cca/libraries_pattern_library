@@ -1,0 +1,32 @@
+footer {
+    background: black !important;
+    color: white;
+    padding: 2em;
+    width: 100%;
+}
+footer .menu li {
+    margin: 0 0 5px;
+}
+footer .menu a {
+    border-bottom: 1px solid white;
+    color: white;
+    display: inline-block;
+    font-size: 150%;
+    font-variant: small-caps;
+    padding: 0 0 5px;
+    width: 100%;
+}
+footer .menu a:hover {
+    color: var(--brand-teal);
+    border-bottom-color: var(--brand-teal);
+    text-decoration: none;
+}
+ul.social-icons li {
+    margin-right: .6em;
+    width: 27%;
+}
+ul.social-icons [class^="icon-"],
+ul.social-icons [class*="icon-"] {
+    opacity: 0.8;
+
+}

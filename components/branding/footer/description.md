@@ -1,0 +1,1 @@
+Persistent footer on every page of the libraries site. Features: site search, button to ask for help (goes to an email form maybe?), typical set of major links, social media buttons, contact info & street addresses for both libraries. The real site footer has more space so the addresses don't wrap onto a third line.
