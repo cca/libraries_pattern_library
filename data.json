@@ -31,7 +31,8 @@
     },
     "assets": {
         "css": [
-            "styles/styles.css"
+            "styles/styles.css",
+            "styles/search.css"
         ],
         "js": [
             "scripts/app.js"
@@ -64,6 +65,17 @@
         ]
     },
     "groups": [
+        {
+            "name": "home-page",
+            "title": "Home Page",
+            "components": [
+                {
+                    "group": "home-page",
+                    "name": "search-box",
+                    "title": "Search Box"
+                }
+            ]
+        },
         {
             "name": "branding",
             "title": "Branding",

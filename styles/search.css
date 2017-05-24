@@ -1,0 +1,10 @@
+/* styles for home page > search box component */
+select.input-lg {
+    line-height: inherit;
+}
+
+.main-search select {
+    background-color: #005776;
+    border-right: 0 !important;
+    color: white;
+}
