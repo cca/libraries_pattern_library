@@ -31,9 +31,11 @@
     },
     "assets": {
         "css": [
-            "styles.css"
+            "styles/styles.css"
         ],
-        "js": []
+        "js": [
+            "scripts/app.js"
+        ]
     },
     "font_libraries": {
         "typekit_code": null,
