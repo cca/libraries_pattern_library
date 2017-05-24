@@ -4,7 +4,7 @@ select.input-lg {
 }
 
 .main-search select {
-    background-color: #005776;
+    background-color: var(--brand-blue);
     border-right: 0 !important;
     color: white;
 }

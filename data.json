@@ -31,6 +31,7 @@
     },
     "assets": {
         "css": [
+            "styles/colors.css",
             "styles/styles.css",
             "styles/search.css"
         ],
