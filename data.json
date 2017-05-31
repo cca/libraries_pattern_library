@@ -31,10 +31,11 @@
     },
     "assets": {
         "css": [
-            "styles/colors.css",
             "styles/styles.css",
+            "styles/colors.css",
             "styles/footer.css",
-            "styles/search.css"
+            "styles/search.css",
+            "styles/text.css"
         ],
         "js": [
             "scripts/app.js"
@@ -107,6 +108,27 @@
                     "group": "branding",
                     "name": "footer",
                     "title": "Footer"
+                }
+            ]
+        },
+        {
+            "name": "text",
+            "title": "Text",
+            "components": [
+                {
+                    "group": "text",
+                    "name": "title",
+                    "title": "Page Title"
+                },
+                {
+                    "group": "text",
+                    "name": "headings",
+                    "title": "Headings"
+                },
+                {
+                    "group": "text",
+                    "name": "lists",
+                    "title": "Lists"
                 }
             ]
         },
