@@ -1,0 +1,183 @@
+<link rel="stylesheet" href="../../../styles/styles.css">
+
+<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	
+$(document).ready(function(){
+$(".one").hover(function(){
+   $(".description1").toggleClass('opacity1');
+});         
+
+$(".two").hover(function(){
+   $(".description2").toggleClass('opacity1');
+});
+	
+$(".three").hover(function(){
+   $(".description3").toggleClass('opacity1');
+});
+
+}); 
+
+
+</script>
+</head>
+
+<div id="this_is_whats_new">
+	
+	  
+    <section class="whats_new_block">
+        <a href="#" class="whats_new"><h3> what's new 1 </h3></a>
+        <a href="#" class="whats_new"><h3> what's new 2 </h3></a>
+        <a href="#" class="whats_new"><h3> what's new 3 </h3></a>
+       
+     </section>
+
+	
+<section class="this_is_new_block">
+  <div class="this_is_new_block__item one ">
+      <h2 class="this_is_new_block__title">This is new 1 </h2>
+  </div>
+    
+  <div class="this_is_new_block__item two ">
+    <h2 class="this_is_new_block__title">This is new 2</h2>
+  </div>
+  <div class="this_is_new_block__item three ">
+    <h2 class="this_is_new_block__title">This is new 3</h2>
+  </div>
+	
+</section>
+	
+	<div id="description">
+
+	<p class="description1">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nisl massa. Cras ut faucibus turpis. </p>
+
+	<p class="description2">   Fusce molestie erat metus non sagittis pretium.  </p>
+
+	<p class="description3"> Aenean ex nisi, non pharetra purus vehicula in. Sed laoreet sapien nisi, vel porttitor nisi. </p>		
+		</div>	
+</div>
+
+<style media="screen">
+    
+  body {
+  margin: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  text-align: center;
+	  align-items: center;
+      justify-content: center;
+	  align-content: center;
+}
+
+#this_is_whats_new {
+	width: auto;
+	display: inline-block;
+	margin-top: 200px;
+	  text-align: center;
+	  align-items: center;
+      justify-content: center;
+	  align-content: center;
+	}
+	
+	.whats_new_block a:hover, .whats_new_block a:focus {
+		text-decoration: none;
+	}
+	
+.whats_new_block {
+	display: inline-block;
+	width: 190px;
+	margin-right: 20px;
+	}
+	
+	
+.whats_new h3{
+	color: #005776;
+	background: white;
+	display: block;
+     height: 65px;
+    margin: 0;
+    padding-top: 21px;
+	
+	}
+	
+	.whats_new h3:hover, .whats_new h3:focus{
+		background-color: #005776;
+		color: white;
+		text-decoration: none;
+	}
+	
+.this_is_new_block {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 60vw;
+}
+.this_is_new_block__item {
+  flex-grow: 1;
+  background: #ccc;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2);
+  transition: .2s all;
+  cursor: pointer;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: center;
+}
+.this_is_new_block__item:hover {
+  flex-grow: 2;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 87, 118, 0.8);
+    text-decoration: none;
+}
+    
+.this_is_new_block__item:nth-child(1) {
+  background: #222 url(https://s-media-cache-ak0.pinimg.com/originals/d0/8b/97/d08b97d12c4a539dc15bd8cc243ae962.jpg) no-repeat center center;
+    background-size:cover;
+}
+	
+.this_is_new_block__item:nth-child(2) {
+  background: #222 url(http://michigantoday.umich.edu/wp-content/uploads/2017/01/talking-books-fox-2-17.jpg) no-repeat center center;
+    background-size:cover;
+}
+	
+.this_is_new_block__item:nth-child(3) {
+  background: #222 url(http://s7d2.scene7.com/is/image/woodstream/hh-animals-raccoon-3?$ProductPgLarge2$) no-repeat center center;
+    background-size:cover;
+}
+	
+.this_is_new_block__title {
+  color: #fff;
+  transition: .2s all;
+}
+ 
+    
+.description1, .description2, .description3{ 
+        width: 23.5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0;
+    transition: .3s all;
+    display: inline-grid;
+
+}
+	
+	#description {
+		margin-left: 216px;
+    	margin-top: 20px;
+	}
+	
+.opacity1 {
+		opacity: 1;
+	}
+	
+   
+</style>
+
+
+

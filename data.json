@@ -73,6 +73,11 @@
                     "group": "home-page",
                     "name": "search-box",
                     "title": "Search Box"
+                },
+                {
+                    "group": "home-page",
+                    "name": "whats-new",
+                    "title": "What's New"
                 }
             ]
         },
