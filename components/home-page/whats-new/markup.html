@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="../../../styles/styles.css">
 
 <head>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -20,22 +19,29 @@
 
       $(".whats_new").click(function() {
         $(this).addClass("whats_new_focus").siblings().removeClass("whats_new_focus");
-		  
-	});
-		
 
-	  $(".wsn1").addClass("whats_new_focus");   
-	  $(".this_one").addClass("thisthis"); 
-		
 	});
-	  
-	
+
+
+	  $(".wsn1").addClass("whats_new_focus");
+	  $(".this_one").addClass("thisthis");
+
+      $('section.this_is_new_block').hide()
+      $('section.this_is_new_block.wsn1').show()
+
+      $('button.whats_new').click(function(){
+          var wsn = $(this).attr('class').match(/wsn\d/)[0]
+          $('section.this_is_new_block').hide()
+          $('section.' + wsn).show()
+      })
+
+	});
+
+
 	 $('.wsn2').click(function(){
     $('#picture').attr('src', 'http://profile.ak.fbcdn.net/hprofile-ak-ash3/41811_170099283015889_1174445894_q.jpg');
     });
-	  
-	  
-	  
+
 
   </script>
 </head>
@@ -53,7 +59,7 @@
   </section>
 
 
-  <section class="this_is_new_block this_one">
+  <section class="this_is_new_block this_one wsn1">
     <div class="this_is_new_block_item one ">
       <h2 class="this_is_new_block_title">This is new 1 </h2>
     </div>
@@ -66,7 +72,21 @@
     </div>
 
   </section>
-	
+
+  <section class="this_is_new_block this_one wsn2">
+    <div class="this_is_new_block_item one ">
+      <h2 class="this_is_new_block_title">What's new 1</h2>
+    </div>
+
+    <div class="this_is_new_block_item two ">
+      <h2 class="this_is_new_block_title">What's new 2</h2>
+    </div>
+    <div class="this_is_new_block_item three ">
+      <h2 class="this_is_new_block_title">What's new 3</h2>
+    </div>
+
+  </section>
+
 
 
   <div id="description">
@@ -89,7 +109,7 @@
     justify-content: center;
     align-content: center;
   }
-  
+
   #this_is_whats_new {
     width: auto;
     display: inline-block;
@@ -99,26 +119,26 @@
     justify-content: center;
     align-content: center;
   }
-	
+
 	.this_two, .this_three {
 		display: none;
 	}
-	
+
 	.thisthis {
 		display: inline-flex;
 	}
-  
+
   .whats_new_block a:hover,
   .whats_new_block a:focus {
     text-decoration: none;
   }
-  
+
   .whats_new_block {
     display: inline-block;
     width: 190px;
     margin-right: 20px;
   }
-  
+
   .whats_new {
     color: #005776;
     background: white;
@@ -129,7 +149,7 @@
 	  outline-color: transparent;
     outline-style: none;
   }
-  
+
   .whats_new_focus, .whats_new:hover, .whats_new:active, .whats_new:focus{
     background-color: #005776;
     color: white;
@@ -137,15 +157,15 @@
 	  outline-color: transparent;
     outline-style: none;
   }
-  
-	
+
+
   .whats_new:active{
     outline-color: transparent;
     outline-style: none;
   }
-	
-	
-  
+
+
+
   .this_is_new_block {
 /*    display: inline-flex;*/
     justify-content: center;
@@ -153,7 +173,7 @@
     height: 30vh;
     width: 60vw;
   }
-  
+
   .this_is_new_block_item {
     flex-grow: 1;
     background: #ccc;
@@ -169,33 +189,33 @@
     box-sizing: border-box;
     text-align: center;
   }
-  
+
   .this_is_new_block_item:hover {
     flex-grow: 2;
     box-shadow: inset 0 0 0 100vmax rgba(0, 87, 118, 0.8);
     text-decoration: none;
   }
-  
+
   .this_is_new_block_item:nth-child(1) {
     background: #222 url(https://s-media-cache-ak0.pinimg.com/originals/d0/8b/97/d08b97d12c4a539dc15bd8cc243ae962.jpg) no-repeat center center;
     background-size: cover;
   }
-  
+
   .this_is_new_block_item:nth-child(2) {
     background: #222 url(http://michigantoday.umich.edu/wp-content/uploads/2017/01/talking-books-fox-2-17.jpg) no-repeat center center;
     background-size: cover;
   }
-  
+
   .this_is_new_block_item:nth-child(3) {
     background: #222 url(http://s7d2.scene7.com/is/image/woodstream/hh-animals-raccoon-3?$ProductPgLarge2$) no-repeat center center;
     background-size: cover;
   }
-  
+
   .this_is_new_block_title {
     color: #fff;
     transition: .2s all;
   }
-  
+
   .description1,
   .description2,
   .description3 {
@@ -206,12 +226,12 @@
     transition: .3s all;
     display: inline-grid;
   }
-  
+
   #description {
     margin-left: 216px;
     margin-top: 20px;
   }
-  
+
   .opacity1 {
     opacity: 1;
   }
