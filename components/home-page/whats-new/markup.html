@@ -17,8 +17,22 @@ $(".two").hover(function(){
 $(".three").hover(function(){
    $(".description3").toggleClass('opacity1');
 });
-
+	
+	
+	
+$(".whats_new").click(function() {  
+    $(this).addClass("whats_new_focus"); 
+	
 }); 
+	
+$(document).ready(function() {
+	$(".whats_new:first-child").hide("whats_new_focus");
+	}); 
+		}); 
+
+	
+	
+
 
 
 </script>
@@ -28,9 +42,9 @@ $(".three").hover(function(){
 	
 	  
     <section class="whats_new_block">
-        <a href="#" class="whats_new"><h3> what's new 1 </h3></a>
-        <a href="#" class="whats_new"><h3> what's new 2 </h3></a>
-        <a href="#" class="whats_new"><h3> what's new 3 </h3></a>
+        <a href="#" class="whats_new"><h3> What's new 1 </h3></a>
+        <a href="#" class="whats_new"><h3> What's new 2 </h3></a>
+        <a href="#" class="whats_new"><h3> What's new 3 </h3></a>
        
      </section>
 
@@ -81,7 +95,7 @@ $(".three").hover(function(){
 	  align-content: center;
 	}
 	
-	.whats_new_block a:hover, .whats_new_block a:focus {
+.whats_new_block a:hover, .whats_new_block a:focus {
 		text-decoration: none;
 	}
 	
@@ -102,11 +116,17 @@ $(".three").hover(function(){
 	
 	}
 	
-	.whats_new h3:hover, .whats_new h3:focus{
+.whats_new h3:hover {
 		background-color: #005776;
 		color: white;
 		text-decoration: none;
-	}
+}
+	
+.whats_new_focus {
+		background-color: #005776;
+		color: white;
+		text-decoration: none;
+}
 	
 .this_is_new_block {
   display: inline-flex;
