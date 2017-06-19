@@ -4,99 +4,91 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $(".one").hover(function() {
-        $(".description1").toggleClass('opacity1');
-      });
 
-      $(".two").hover(function() {
-        $(".description2").toggleClass('opacity1');
-      });
-
-      $(".three").hover(function() {
-        $(".description3").toggleClass('opacity1');
-      });
-
-
-      $(".whats_new").click(function() {
-        $(this).addClass("whats_new_focus").siblings().removeClass("whats_new_focus");
+      $(".the_buttons").click(function() {
+        $(this).addClass("the_buttons_focus").siblings().removeClass("the_buttons_focus");
 
 	});
 
 
-	  $(".wsn1").addClass("whats_new_focus");
-	  $(".this_one").addClass("thisthis");
+	  $(".wsn1").addClass("the_buttons_focus");
+		
+      $('section.news').hide()
+      $('section.news.wsn1').show()
 
-      $('section.this_is_new_block').hide()
-      $('section.this_is_new_block.wsn1').show()
-
-      $('button.whats_new').click(function(){
+      $('button.the_buttons').click(function(){
           var wsn = $(this).attr('class').match(/wsn\d/)[0]
-          $('section.this_is_new_block').hide()
+          $('section.news').hide()
           $('section.' + wsn).show()
       })
 
 	});
 
-
-	 $('.wsn2').click(function(){
-    $('#picture').attr('src', 'http://profile.ak.fbcdn.net/hprofile-ak-ash3/41811_170099283015889_1174445894_q.jpg');
-    });
-
-
   </script>
 </head>
 
-<div id="this_is_whats_new">
 
+<div id="both_btn_and_news">
 
   <section class="whats_new_block">
 
 
-      <button type="button" class="btn btn-lg hi whats_new wsn1">What's new 1</button>
-      <button type="button" class="btn btn-lg hi whats_new wsn2">What's new 2</button>
-      <button type="button" class="btn btn-lg hi whats_new wsn3">What's new 3</button>
+      <button type="button" class="btn btn-lg the_buttons wsn1">What's new 1</button>
+      <button type="button" class="btn btn-lg the_buttons wsn2">Social media</button>
+      <button type="button" class="btn btn-lg the_buttons wsn3">Events</button>
 
   </section>
 
 
-  <section class="this_is_new_block this_one wsn1">
-    <div class="this_is_new_block_item one ">
-      <h2 class="this_is_new_block_title">This is new 1 </h2>
+  <section class="news wsn1">
+    <div class="news_item" style="background-image:url(http://www.vvclassroom.com/uploads//2014/12/Newspaper.jpg)">
+      <h2>This is new 1</h2>
+	  <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nisl massa. Cras ut faucibus turpis. </p>
     </div>
 
-    <div class="this_is_new_block_item two ">
-      <h2 class="this_is_new_block_title">This is new 2</h2>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/f0/a7/85/f0a785bf97cb581585ad0f9be7a68146.jpg)">
+      <h2>This is new 2</h2>
+	  <p class="description"> Fusce molestie erat metus non sagittis pretium. </p>
     </div>
-    <div class="this_is_new_block_item three ">
-      <h2 class="this_is_new_block_title">This is new 3</h2>
+	  
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/33/d4/d3/33d4d37257d548d4fde5a1125421cd4e.jpg)">
+      <h2>This is new 3</h2>
+	  <p class="description"> Aenean ex nisi, non pharetra purus vehicula in. Sed laoreet sapien nisi, vel porttitor nisi. </p>
     </div>
-
   </section>
 
-  <section class="this_is_new_block this_one wsn2">
-    <div class="this_is_new_block_item one ">
-      <h2 class="this_is_new_block_title">What's new 1</h2>
+  <section class="news wsn2">
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/12/0a/52/120a523ad7f9ca4ff3988fca040c633e.jpg)">
+      <h2>Facebook</h2>
+	  <p class="description"> Like us on Facebook!</p>
     </div>
-
-    <div class="this_is_new_block_item two ">
-      <h2 class="this_is_new_block_title">What's new 2</h2>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/35/30/9a/35309acf76fba7f48a6ca54cc0481795.jpg)" >
+      <h2>Instagram</h2>
+	  <p class="description"> Follow us on Instagram! </p>
     </div>
-    <div class="this_is_new_block_item three ">
-      <h2 class="this_is_new_block_title">What's new 3</h2>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/bd/28/41/bd2841079692d674e2652f2b5c9d3d6e.jpg)">
+      <h2>Twitter</h2>
+	  <p class="description"> We're on twitter!! </p>
     </div>
-
+  </section>
+	
+	
+	
+  <section class="news wsn3">
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/e7/f2/34/e7f234d8c29e4f3e0843dfe12abcd1a8.jpg">
+      <h2>Book fair</h2>
+	  <p class="description"> Come join us!</p>
+    </div>
+    <div class="news_item" style="background-image:url(https://image.freepik.com/free-vector/top-view-book-mockup_23-2147504259.jpg)">
+      <h2>Book design contest</h2>
+	  <p class="description"> Submit your design here before 11/11</p>
+    </div>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/74/ff/e4/74ffe43f3e2fd33506b77229067f7df0.jpg)">
+      <h2>Potluck</h2>
+	  <p class="description"> Free food!!!!!</p>
+    </div>
   </section>
 
-
-
-  <div id="description">
-
-    <p class="description1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nisl massa. Cras ut faucibus turpis. </p>
-
-    <p class="description2"> Fusce molestie erat metus non sagittis pretium. </p>
-
-    <p class="description3"> Aenean ex nisi, non pharetra purus vehicula in. Sed laoreet sapien nisi, vel porttitor nisi. </p>
-  </div>
 </div>
 
 <style media="screen">
@@ -110,7 +102,7 @@
     align-content: center;
   }
 
-  #this_is_whats_new {
+ #both_btn_and_news {
     width: auto;
     display: inline-block;
     margin-top: 200px;
@@ -120,13 +112,6 @@
     align-content: center;
   }
 
-	.this_two, .this_three {
-		display: none;
-	}
-
-	.thisthis {
-		display: inline-flex;
-	}
 
   .whats_new_block a:hover,
   .whats_new_block a:focus {
@@ -139,42 +124,37 @@
     margin-right: 20px;
   }
 
-  .whats_new {
+  .the_buttons {
+	width: 160px;
     color: #005776;
     background: white;
     display: block;
     height: 65px;
     margin: 0;
     padding-top: 21px;
-	  outline-color: transparent;
+	outline-color: transparent;
     outline-style: none;
   }
 
-  .whats_new_focus, .whats_new:hover, .whats_new:active, .whats_new:focus{
+  .the_buttons_focus, .the_buttons:hover, .the_buttons:active, .the_buttons:focus{
     background-color: #005776;
     color: white;
     text-decoration: none;
-	  outline-color: transparent;
+	outline-color: transparent;
     outline-style: none;
   }
 
-
-  .whats_new:active{
-    outline-color: transparent;
-    outline-style: none;
-  }
-
-
-
-  .this_is_new_block {
-/*    display: inline-flex;*/
+  .news {
     justify-content: center;
     align-items: center;
     height: 30vh;
     width: 60vw;
+	display: inline-flex;
+	background-color: transparent;
+
   }
 
-  .this_is_new_block_item {
+  .news_item {
     flex-grow: 1;
     background: #ccc;
     height: 250px;
@@ -182,58 +162,43 @@
     align-items: flex-end;
     justify-content: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.3);
     transition: .2s all;
     cursor: pointer;
-    padding: 2em;
+    padding-bottom: 2em;
     box-sizing: border-box;
     text-align: center;
   }
 
-  .this_is_new_block_item:hover {
+h2 {
+    color: #fff;
+    transition: .2s all;
+	width: 240px;
+  }
+	
+.news_item:hover {
     flex-grow: 2;
     box-shadow: inset 0 0 0 100vmax rgba(0, 87, 118, 0.8);
     text-decoration: none;
   }
 
-  .this_is_new_block_item:nth-child(1) {
-    background: #222 url(https://s-media-cache-ak0.pinimg.com/originals/d0/8b/97/d08b97d12c4a539dc15bd8cc243ae962.jpg) no-repeat center center;
-    background-size: cover;
-  }
+	
+.news_item:hover .description{
+		opacity: 1;
+	}
 
-  .this_is_new_block_item:nth-child(2) {
-    background: #222 url(http://michigantoday.umich.edu/wp-content/uploads/2017/01/talking-books-fox-2-17.jpg) no-repeat center center;
-    background-size: cover;
-  }
-
-  .this_is_new_block_item:nth-child(3) {
-    background: #222 url(http://s7d2.scene7.com/is/image/woodstream/hh-animals-raccoon-3?$ProductPgLarge2$) no-repeat center center;
-    background-size: cover;
-  }
-
-  .this_is_new_block_title {
-    color: #fff;
-    transition: .2s all;
-  }
-
-  .description1,
-  .description2,
-  .description3 {
-    width: 23.5%;
+.description  {
+    width: 280px;
     padding-right: 20px;
     padding-left: 20px;
     opacity: 0;
     transition: .3s all;
-    display: inline-grid;
+    position: absolute;
+	color: #005776;
+	margin-top: 270px;
+	align-self: baseline;
+	
   }
 
-  #description {
-    margin-left: 216px;
-    margin-top: 20px;
-  }
-
-  .opacity1 {
-    opacity: 1;
-  }
 
 </style>
