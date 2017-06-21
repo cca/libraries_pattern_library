@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="../../../styles/styles.css">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $(".the_buttons").click(function() {
+        $(this).addClass("the_buttons_focus").siblings().removeClass("the_buttons_focus");
+
+	});
+
+
+	  $(".wsn1").addClass("the_buttons_focus");
+		
+      $('section.news').hide()
+      $('section.news.wsn1').show()
+
+      $('button.the_buttons').click(function(){
+          var wsn = $(this).attr('class').match(/wsn\d/)[0]
+          $('section.news').hide()
+          $('section.' + wsn).show()
+      })
+
+	});
+
+  </script>
+</head>
+
+
+<div id="both_btn_and_news">
+
+  <section class="whats_new_block">
+
+
+      <button type="button" class="btn btn-lg the_buttons wsn1">What's new 1</button>
+      <button type="button" class="btn btn-lg the_buttons wsn2">Social media</button>
+      <button type="button" class="btn btn-lg the_buttons wsn3">Events</button>
+
+  </section>
+
+
+  <section class="news wsn1">
+    <div class="news_item" style="background-image:url(http://www.vvclassroom.com/uploads//2014/12/Newspaper.jpg)">
+      <h2>This is new 1</h2>
+	  <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et nisl massa. Cras ut faucibus turpis. </p>
+    </div>
+
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/f0/a7/85/f0a785bf97cb581585ad0f9be7a68146.jpg)">
+      <h2>This is new 2</h2>
+	  <p class="description"> Fusce molestie erat metus non sagittis pretium. </p>
+    </div>
+	  
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/33/d4/d3/33d4d37257d548d4fde5a1125421cd4e.jpg)">
+      <h2>This is new 3</h2>
+	  <p class="description"> Aenean ex nisi, non pharetra purus vehicula in. Sed laoreet sapien nisi, vel porttitor nisi. </p>
+    </div>
+  </section>
+
+  <section class="news wsn2">
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/12/0a/52/120a523ad7f9ca4ff3988fca040c633e.jpg)">
+      <h2>Facebook</h2>
+	  <p class="description"> Like us on Facebook!</p>
+    </div>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/35/30/9a/35309acf76fba7f48a6ca54cc0481795.jpg)" >
+      <h2>Instagram</h2>
+	  <p class="description"> Follow us on Instagram! </p>
+    </div>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/bd/28/41/bd2841079692d674e2652f2b5c9d3d6e.jpg)">
+      <h2>Twitter</h2>
+	  <p class="description"> We're on twitter!! </p>
+    </div>
+  </section>
+	
+	
+	
+  <section class="news wsn3">
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/e7/f2/34/e7f234d8c29e4f3e0843dfe12abcd1a8.jpg">
+      <h2>Book fair</h2>
+	  <p class="description"> Come join us!</p>
+    </div>
+    <div class="news_item" style="background-image:url(https://image.freepik.com/free-vector/top-view-book-mockup_23-2147504259.jpg)">
+      <h2>Book design contest</h2>
+	  <p class="description"> Submit your design here before 11/11</p>
+    </div>
+    <div class="news_item" style="background-image:url(https://s-media-cache-ak0.pinimg.com/564x/74/ff/e4/74ffe43f3e2fd33506b77229067f7df0.jpg)">
+      <h2>Potluck</h2>
+	  <p class="description"> Free food!!!!!</p>
+    </div>
+  </section>
+
+</div>
+
+<style media="screen">
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+ #both_btn_and_news {
+    width: auto;
+    display: inline-block;
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  .whats_new_block a:hover,
+  .whats_new_block a:focus {
+    text-decoration: none;
+  }
+
+  .whats_new_block {
+    display: inline-block;
+    width: 190px;
+    margin-right: 20px;
+  }
+
+  .the_buttons {
+	width: 160px;
+    color: #005776;
+    background: white;
+    display: block;
+    height: 65px;
+    margin: 0;
+    padding-top: 21px;
+	outline-color: transparent;
+    outline-style: none;
+  }
+
+  .the_buttons_focus, .the_buttons:hover, .the_buttons:active, .the_buttons:focus{
+    background-color: #005776;
+    color: white;
+    text-decoration: none;
+	outline-color: transparent;
+    outline-style: none;
+  }
+
+  .news {
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 60vw;
+	display: inline-flex;
+	background-color: transparent;
+
+  }
+
+  .news_item {
+    flex-grow: 1;
+    background: #ccc;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+    transition: .2s all;
+    cursor: pointer;
+    padding-bottom: 2em;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+h2 {
+    color: #fff;
+    transition: .2s all;
+	width: 240px;
+  }
+	
+.news_item:hover {
+    flex-grow: 2;
+    box-shadow: inset 0 0 0 100vmax rgba(0, 87, 118, 0.8);
+    text-decoration: none;
+  }
+
+	
+.news_item:hover .description{
+		opacity: 1;
+	}
+
+.description  {
+    width: 280px;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0;
+    transition: .3s all;
+    position: absolute;
+	color: #005776;
+	margin-top: 270px;
+	align-self: baseline;
+	
+  }
+
+
+</style>
